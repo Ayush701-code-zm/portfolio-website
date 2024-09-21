@@ -1,0 +1,27 @@
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blue-gradient" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#00f" />        <!-- Dark Blue -->
+      <stop offset="50%" stop-color="#1e90ff" />    <!-- Dodger Blue -->
+      <stop offset="100%" stop-color="#87ceeb" />   <!-- Sky Blue -->
+    </linearGradient>
+  </defs>
+  <text 
+    x="50%" 
+    y="50%" 
+    font-size="140"  
+    text-anchor="middle" 
+    alignment-baseline="middle" 
+    font-family="Arial, sans-serif" 
+    font-weight="bold"
+    fill="url(#blue-gradient)"
+  >
+    <tspan>&#123;</tspan> <!-- Opening curly bracket -->
+    <tspan>A</tspan>
+    <tspan>y</tspan>
+    <tspan>u</tspan>
+    <tspan>s</tspan>
+    <tspan>h</tspan>
+    <tspan>&#125;</tspan> <!-- Closing curly bracket -->
+  </text>
+</svg>
