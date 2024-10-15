@@ -8,6 +8,8 @@ function Home() {
   const h12 = useRef();
   const h13 = useRef();
   const myimageref = useRef();
+  const buttonRefs = useRef([]);
+
   useEffect(() => {
     const tl = gsap.timeline();
     tl.from(
@@ -53,6 +55,17 @@ function Home() {
           ease: "Power3.easeOut",
         },
         "<"
+      )
+      .from(
+        buttonRefs.current,
+        {
+          y: 50,
+          opacity: 0,
+          stagger: 0.3,
+          duration: 1,
+          ease: "Power3.easeOut",
+        },
+        "<"
       );
   }, []);
 
@@ -77,6 +90,19 @@ function Home() {
         >
           {tagline}
         </h2>
+        {/* Buttons Section */}
+        <div className="mt-5 flex space-x-4">
+          <a href="contact" ref={el => buttonRefs.current[0] = el} className="inline-block">
+            <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200">
+              Contact Me
+            </button>
+          </a>
+          <a href="https://drive.google.com/file/d/1E-OCOkrhNC__YAoRXs6-X37lTjJkvRhN/view?usp=sharing" ref={el => buttonRefs.current[1] = el} target="_blank" rel="noopener noreferrer" className="inline-block">
+            <button className="bg-green-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-green-600 transition duration-200">
+              My Resume
+            </button>
+          </a>
+        </div>
       </div>
       <div className="mt-5 md:mt-0">
         <img ref={myimageref} className="w-1/2 md:ml-auto" src={img} alt="Pavan MG" />

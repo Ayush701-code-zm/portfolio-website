@@ -16,12 +16,6 @@
     font-weight="bold"
     fill="url(#blue-gradient)"
   >
-    <tspan>&#123;</tspan> <!-- Opening curly bracket -->
-    <tspan>A</tspan>
-    <tspan>y</tspan>
-    <tspan>u</tspan>
-    <tspan>s</tspan>
-    <tspan>h</tspan>
-    <tspan>&#125;</tspan> <!-- Closing curly bracket -->
+    <tspan>&#123;DevA&#125;</tspan> <!-- Grouped text inside curly braces -->
   </text>
 </svg>
