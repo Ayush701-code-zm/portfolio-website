@@ -8,7 +8,6 @@ function Technologies() {
     js,
     react,
     node,
-    // redux,
     express,
     bootstrap,
     mongodb,
